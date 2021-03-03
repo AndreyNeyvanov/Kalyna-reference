@@ -451,7 +451,7 @@ uint64_t ReverseWord(uint64_t word) {
     uint8_t* dst = (uint8_t*)&reversed;
 
     for (i = 0; i < sizeof(uint64_t); ++i) {
-        dst[i] = src[sizeof(uint64_t) - i];    
+        dst[i] = src[sizeof(uint64_t) - 1 - i];    
     }
     return reversed;
 }
